@@ -128,7 +128,7 @@ Tabel 3.1 Distribusi Dataset FER2013
 
 
 
-
+<p align="center">
 <img width="510" height="257" alt="image" src="https://github.com/user-attachments/assets/e43b212d-4b60-4788-a7d2-c23b9f5237d6" />
 
 
@@ -236,7 +236,8 @@ Selama proses pelatihan, model menunjukkan peningkatan performa secara bertahap.
 # 4.4 Evaluasi Model #
 <p align="justify">
 Evaluasi model dilakukan menggunakan validation set yang terdiri dari 7.066 citra. Hasil evaluasi disajikan melalui classification report dan confusion matrix yang divisualisasikan pada Gambar 4.5. dan Gambar 4.6. berikut.
-  
+
+<p align="center">
 <img width="344" height="193" alt="image" src="https://github.com/user-attachments/assets/f57839f4-9f36-487b-879a-0b350054c525" />
 
 <p align="center">
@@ -244,7 +245,8 @@ Gambar 4.5 Clasification Report
 
 <p align="justify">
 Berdasarkan output classification report, performa model dapat diamati melalui nilai precision, recall, dan f1-score untuk masing-masing kelas. Kelas Happy menunjukkan performa terbaik dengan f1-score 0.84, diikuti kelas Surprise dengan f1-score 0.75. Kedua kelas tersebut umumnya memiliki karakteristik ekspresi yang lebih jelas, sehingga lebih mudah dikenali model. Kelas Neutral juga memperlihatkan performa stabil dengan f1-score 0.57. Sebaliknya, kelas seperti Fear (f1-score 0.44) dan Sad (f1-score 0.53) memiliki nilai yang lebih rendah, mencerminkan tantangan dalam membedakan ekspresi yang mirip pada citra grayscale beresolusi rendah. Kelas Disgust, meskipun memiliki jumlah data paling sedikit, memperoleh f1-score 0.59, menunjukkan bahwa ketidakseimbangan data berpengaruh terhadap akurasi prediksi.
-  
+
+<p align="center">
 <img width="668" height="584" alt="image" src="https://github.com/user-attachments/assets/fb832335-2823-4e89-af6e-9b38aad5cf81" />
 
 <p align="center">
