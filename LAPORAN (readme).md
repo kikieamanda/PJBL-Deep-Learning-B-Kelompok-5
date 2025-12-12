@@ -1,4 +1,4 @@
-# PJBL-Deep-Learning-B-Kelompok-5
+# PJBL-Deep-Learning-B-Kelompok-5 #
 
 # “Face Expression Recognition With Convolutional Neural Network (CNN)” #
 
@@ -122,11 +122,15 @@ Pada penelitian ini digunakan versi dataset FER2013 yang tersedia di platform Ka
 <p align="justify">
 Distribusi jumlah citra pada masing-masing kelas ekspresi ditunjukkan pada Tabel 3.1. Tabel tersebut memberikan gambaran mengenai komposisi data pada training set dan validation set untuk setiap kategori ekspresi wajah.
 
+
 <p align="center">
 Tabel 3.1 Distribusi Dataset FER2013
 
 
+
+
 <img width="510" height="257" alt="image" src="https://github.com/user-attachments/assets/e43b212d-4b60-4788-a7d2-c23b9f5237d6" />
+
 
 
 <p align="justify">
