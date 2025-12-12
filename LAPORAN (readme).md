@@ -108,23 +108,35 @@ Namun, performa model sering menurun ketika diuji pada kondisi dunia nyata (in-t
 # METODOLOGI #
 # 3.1 Dataset #
 <p align="justify">
-Pada penelitian ini digunakan dataset Face Expression Recognition 2013 yang berasal dari platform Kaggle. Dataset ini secara luas digunakan dalam berbagai penelitian pengenalan ekspresi wajah karena memiliki ukuran yang cukup besar, anotasi yang lengkap, serta format gambar yang seragam untuk keperluan pelatihan model deep learning.
+Dataset merupakan komponen utama dalam pengembangan model deep learning, khususnya pada tugas pengenalan ekspresi wajah. Kualitas dataset, jumlah data, serta konsistensi anotasi sangat berpengaruh terhadap kemampuan model dalam mempelajari pola visual yang merepresentasikan ekspresi emosional manusia.
+ 
+<p align="justify">
+Salah satu dataset yang banyak digunakan dalam penelitian pengenalan ekspresi wajah adalah Face Expression Recognition 2013 (FER2013). Dataset ini pertama kali diperkenalkan melalui kompetisi Kaggle “Challenges in Representation Learning: Facial Expression Recognition Challenge” dan hingga saat ini masih menjadi benchmark dalam berbagai penelitian karena ukurannya yang besar serta anotasi kelas yang terstandarisasi.
 
 <p align="justify">
-Dataset terdiri dari lebih dari 30.000 gambar wajah dengan resolusi 48 × 48 piksel dalam format grayscale. Setiap citra diklasifikasikan ke dalam tujuh kategori ekspresi, yaitu: Angry, Disgust, Fear, Happy, Sad, Surprise, dan Neutral. Semua gambar telah dinormalisasi ke ukuran dan format yang sama sehingga memudahkan preprocessing dan pelatihan model.
-Selain itu, dataset sudah dibagi ke dalam tiga bagian, yaitu:
-  
-1. Training set, digunakan untuk melatih model
-
-2. Validation set, digunakan untuk mengevaluasi model selama proses training
-
-3. Test set, digunakan untuk mengukur performa akhir model
+Dataset FER2013 terdiri dari sekitar 36.000 citra wajah beresolusi 48 × 48 piksel dalam format grayscale. Seluruh citra telah melalui proses automatic face registration, sehingga posisi wajah relatif terpusat dan memiliki skala yang seragam. Setiap citra merepresentasikan satu ekspresi wajah yang diklasifikasikan ke dalam tujuh kategori, yaitu Angry, Disgust, Fear, Happy, Sad, Surprise, dan Neutral.
 
 <p align="justify">
-Distribusi data antar kelas tidak sepenuhnya seimbang karena beberapa kelas, seperti Disgust, memiliki jumlah sampel yang lebih sedikit. Ketidakseimbangan ini menjadi pertimbangan dalam proses pelatihan, misalnya dengan melakukan augmentasi data untuk memperbaiki representasi kelas yang kurang.
+Pada penelitian ini digunakan versi dataset FER2013 yang tersedia di platform Kaggle dan telah dikonversi ke dalam format direktori berbasis kelas. Dataset tersebut dibagi ke dalam dua subset utama, yaitu training set dan validation set, dengan proporsi sekitar 80% data untuk pelatihan dan 20% data untuk validasi. Pembagian ini memungkinkan proses evaluasi model selama pelatihan tanpa memerlukan pemisahan data tambahan.
+ 
+<p align="justify">
+Distribusi jumlah citra pada masing-masing kelas ekspresi ditunjukkan pada Tabel 3.1. Tabel tersebut memberikan gambaran mengenai komposisi data pada training set dan validation set untuk setiap kategori ekspresi wajah.
+
+<p align="center">
+Tabel 3.1 Distribusi Dataset FER2013
+
+
+<img width="510" height="257" alt="image" src="https://github.com/user-attachments/assets/e43b212d-4b60-4788-a7d2-c23b9f5237d6" />
+
+
+<p align="justify">
+Berdasarkan distribusi tersebut, dapat dilihat bahwa dataset FER2013 memiliki ketidakseimbangan jumlah data antar kelas, di mana kelas Disgust memiliki jumlah sampel yang jauh lebih sedikit dibandingkan kelas lainnya, seperti Happy dan Neutral. Kondisi ini berpotensi memengaruhi performa model dalam mengenali kelas minoritas, sehingga perlu diperhatikan dalam proses pelatihan, salah satunya melalui penerapan teknik data augmentation.
 
 # 3.2 Alur Penelitian #
-GAMBAR FLOWCHART
+<p align="justify">
+Alur penelitian ini dirancang untuk menggambarkan tahapan sistematis dalam pengembangan model Convolutional Neural Network (CNN) untuk pengenalan ekspresi wajah. Secara umum, proses penelitian dimulai dari persiapan dataset, dilanjutkan dengan preprocessing data, perancangan dan pelatihan model, hingga evaluasi performa model.
+
+<img width="973" height="412" alt="image" src="https://github.com/user-attachments/assets/9baaa8da-2045-42b2-bfdb-170deeafe7f5" />
 
 <p align="center">
 Gambar 3.1 Alur Penelitian
